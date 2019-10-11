@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Controller-->
+        <scene sceneID="MhM-FC-DQs">
+            <objects>
+                <viewController storyboardIdentifier="HomeController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Cxv-q8-wiU" customClass="HomeController" customModule="Light_Community" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WUy-2u-JbS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Nyo-jo-bRT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view hidden="YES" alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdG-s2-B7V">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5sl-wt-wsa">
+                                        <rect key="frame" x="188.66666666666666" y="429.66666666666669" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5sl-wt-wsa" firstAttribute="centerX" secondItem="JdG-s2-B7V" secondAttribute="centerX" id="QRS-Ke-Nya"/>
+                                    <constraint firstItem="5sl-wt-wsa" firstAttribute="centerY" secondItem="JdG-s2-B7V" secondAttribute="centerY" id="pxl-BC-dA2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Nyo-jo-bRT" firstAttribute="leading" secondItem="kN3-RP-GXD" secondAttribute="leading" id="9YT-J5-tKh"/>
+                            <constraint firstItem="JdG-s2-B7V" firstAttribute="top" secondItem="WUy-2u-JbS" secondAttribute="top" id="DZm-Xp-pQh"/>
+                            <constraint firstAttribute="bottom" secondItem="Nyo-jo-bRT" secondAttribute="bottom" id="TfC-Eo-ElG"/>
+                            <constraint firstAttribute="bottom" secondItem="JdG-s2-B7V" secondAttribute="bottom" id="WmN-Ay-DYt"/>
+                            <constraint firstItem="Nyo-jo-bRT" firstAttribute="trailing" secondItem="kN3-RP-GXD" secondAttribute="trailing" id="WsQ-Il-ZL2"/>
+                            <constraint firstItem="Nyo-jo-bRT" firstAttribute="top" secondItem="WUy-2u-JbS" secondAttribute="top" id="ZcJ-Z8-gxi"/>
+                            <constraint firstItem="JdG-s2-B7V" firstAttribute="trailing" secondItem="kN3-RP-GXD" secondAttribute="trailing" id="d1O-CG-FL9"/>
+                            <constraint firstItem="JdG-s2-B7V" firstAttribute="leading" secondItem="kN3-RP-GXD" secondAttribute="leading" id="dd9-gc-BAG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kN3-RP-GXD"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadingView" destination="JdG-s2-B7V" id="67N-rS-z7C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oss-g5-8Qt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="182.66667175292969" height="288.33334350585938"/>
+    </resources>
+</document>
