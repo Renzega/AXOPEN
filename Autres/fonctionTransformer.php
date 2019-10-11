@@ -1,4 +1,4 @@
-	function UpdateStatNumber($number)
+	function transformerNombre($number)
 	{
 		if($number >= 0 && $number <= 999)
 		{
