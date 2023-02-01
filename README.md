@@ -1,1 +1,2 @@
 # Bienvenue sur mon  GitHub !
+Je partage ici de nombreuses créations en programmation réalisées au cours de mes années d'apprentissage. Celles-ci avaient pour la plupart été finalisées, mais il se peut cependant que le manque de mises à jour les concernant ait causé une obsolescence de leurs librairies ou de leur code. Ces créations sont partagées à titre pédagogique, de part l'accessibilité et la lisibilité de leur code.
